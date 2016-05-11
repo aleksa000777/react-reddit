@@ -2,3 +2,29 @@ h1 {
   font-family: helvetica;
   font-weight: 200;
 }
+.container {
+  background-color: lightblue;
+  height:           100%;
+  width:            80%;
+  margin-left:      10%;
+}
+.header{
+  text-align: center;
+}
+.picker{
+  text-align: center;
+  font-size:  2em;
+  margin:     0 auto;
+}
+
+.box{
+  margin-left: 20%;
+  width: 60%;
+  background-color: white;
+}
+
+.picker-box{
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+}

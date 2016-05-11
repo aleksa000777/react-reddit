@@ -1,4 +1,6 @@
 import React, { Component, PropTypes } from 'react';
+var className = require('classnames');
+
 
 export default class Picker extends Component {
   render(){
@@ -6,9 +8,10 @@ export default class Picker extends Component {
 
     return(
       <span>
-        <h1>Fast news: {value}</h1>
+        <h1 className="header">Fast news: {value}</h1>
         <select onChange={e => onChange(e.target.value)}
-          value={value}>
+          value={value}
+          className="picker">
           {options.map(option =>
             <option value={option} key={option}>
               {option}
@@ -24,6 +27,6 @@ Picker.propTypes = {
   options: PropTypes.arrayOf(
     PropTypes.string.isRequired
   ).isRequired,
-  value: PropTypes.string.isRequired,
+  value:    PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired
 }
