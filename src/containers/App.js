@@ -42,7 +42,7 @@ class App extends Component {
       <div>
         <Picker value={selectedReddit}
                 onChange={this.handleChange}
-                options={[ 'reactjs', 'frontend' ]} />
+                options={[ 'reactjs', 'frontend', 'technology']} />
         <p>
           {lastUpdated &&
             <span>

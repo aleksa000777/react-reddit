@@ -5,7 +5,7 @@ export default class Posts extends Component {
     return (
       <ul>
         {this.props.posts.map((post, i) =>
-          <li key={i}><a href={post.url}>{post.title}</a></li>
+          <li key={i}><a href={post.url}>{post.title.substring(0,40) + "..."}</a><span> Score: {post.score}</span></li>
         )}
       </ul>
     )
